@@ -1,0 +1,14 @@
+fun main() {
+    val totalSteps = 4000
+    val caloriesBurned = pedometer(totalSteps);
+    println("Walking $totalSteps steps burns $caloriesBurned calories") 
+}
+
+fun pedometer(numberOfSteps: Int): Double {
+    val caloriesBurnedForEachStep = 0.04
+    val TotaLCaloriesBurned = numberOfSteps * caloriesBurnedForEachStep
+    return TotaLCaloriesBurned
+}
+
+//output
+//Walking 4000 steps burns 160.0 calories
